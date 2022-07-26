@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="main">
+      <UniqueIdentifier>{f733a104-de8a-46ac-bf61-49e3aa185c27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="crypto">
+      <UniqueIdentifier>{69269a30-3490-4114-b239-b9549a850fd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="enc">
+      <UniqueIdentifier>{eb5bc497-b2c8-4d5a-a9b3-12c381445448}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="managers">
+      <UniqueIdentifier>{aac29fd9-826f-4a2b-a782-076e5ce9ef10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protection">
+      <UniqueIdentifier>{d20581ff-8305-4e39-a972-2eb879ddaffc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="driver">
+      <UniqueIdentifier>{b2f3d1dc-f903-4098-93a7-d20a38b34681}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="games">
+      <UniqueIdentifier>{6d90fe0d-2a81-43ce-989d-e86195673128}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="games\r6">
+      <UniqueIdentifier>{2b80bfd4-08b7-4238-94c1-10af222ea87c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="games\r6\Actor">
+      <UniqueIdentifier>{9ff780f5-0731-4f38-be91-88fdb2d624db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="games\r6\Controller">
+      <UniqueIdentifier>{c06c3f48-ec5f-4675-baa8-b7dab855ce1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="games\r6\Managers">
+      <UniqueIdentifier>{e3faefc3-9d23-460c-8f85-e793c3977edc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="games\r6\Pawn">
+      <UniqueIdentifier>{e34ea00e-81d7-41b9-8bef-0a24e89d026d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="client.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\crypto\crypto.cpp">
+      <Filter>crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="random.cpp">
+      <Filter>enc</Filter>
+    </ClCompile>
+    <ClCompile Include="hwid.cpp">
+      <Filter>managers</Filter>
+    </ClCompile>
+    <ClCompile Include="enc.cpp">
+      <Filter>enc</Filter>
+    </ClCompile>
+    <ClCompile Include="program.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="r6\r6.cpp">
+      <Filter>games\r6</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\shared\crypto\crypto.h">
+      <Filter>crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="includes.h">
+      <Filter>main</Filter>
+    </ClInclude>
+    <ClInclude Include="protection\checksum.hpp">
+      <Filter>protection</Filter>
+    </ClInclude>
+    <ClInclude Include="protection\debugging.hpp">
+      <Filter>protection</Filter>
+    </ClInclude>
+    <ClInclude Include="protection\lazy_importer.hpp">
+      <Filter>protection</Filter>
+    </ClInclude>
+    <ClInclude Include="protection\xorstr.hpp">
+      <Filter>protection</Filter>
+    </ClInclude>
+    <ClInclude Include="shellcode.hpp">
+      <Filter>main</Filter>
+    </ClInclude>
+    <ClInclude Include="driver\driver.h">
+      <Filter>driver</Filter>
+    </ClInclude>
+    <ClInclude Include="driver\stdafx.h">
+      <Filter>driver</Filter>
+    </ClInclude>
+    <ClInclude Include="driver\utils.h">
+      <Filter>driver</Filter>
+    </ClInclude>
+    <ClInclude Include="r6\r6.hpp">
+      <Filter>games\r6</Filter>
+    </ClInclude>
+    <ClInclude Include="r6\Actor\Actor.hpp">
+      <Filter>games\r6\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="r6\Actor\Weapon.hpp">
+      <Filter>games\r6\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="r6\Controller\PlayerReplicationInfo.hpp">
+      <Filter>games\r6\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="r6\Controller\Controller.hpp">
+      <Filter>games\r6\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="r6\Managers\R6RoundManager.hpp">
+      <Filter>games\r6\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="r6\Managers\R6GameManager.hpp">
+      <Filter>games\r6\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="r6\Managers\R6ProfileManager.hpp">
+      <Filter>games\r6\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="r6\Pawn\Pawn.hpp">
+      <Filter>games\r6\Pawn</Filter>
+    </ClInclude>
+    <ClInclude Include="VMProtectSDK.h">
+      <Filter>main</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
